@@ -3,15 +3,14 @@
     "build" : {
         "dockerfile": "DockerFile"
     },
-    // "features": {
-    //     "ghcr.io/devcontainers/features/common-utils": {
-    //         // "installOhMyZsh": true
-    //     }
-    // },
     "workspaceMount": "source=${localWorkspaceFolder},target=/root/plfa,type=bind",
     "workspaceFolder": "/root/plfa",
-    "features": {
-        // "ghcr.io/devcontainers-contrib/features/fish-apt-get:1": {}
-    },
-    "postCreateCommand": "bash ./.devcontainer/post-create.sh"
+    "postCreateCommand": "bash ./.devcontainer/post-create.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "banacorn.agda-mode"
+            ]
+        }
+    }
 }
