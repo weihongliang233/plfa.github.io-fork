@@ -12,5 +12,6 @@
     "workspaceFolder": "/root/plfa",
     "features": {
         // "ghcr.io/devcontainers-contrib/features/fish-apt-get:1": {}
-    }
+    },
+    "postCreateCommand": "bash ./.devcontainer/post-create.sh"
 }
