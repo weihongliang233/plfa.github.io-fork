@@ -1,7 +1,9 @@
-# cd /root/plfa && git submodule update --init --recursive
+cd ~/plfa && git submodule update --init --recursive
 
-mkdir  /root/.agda
-cp /root/plfa/data/dotagda/* /root/.agda
+mkdir  ~/.agda
+cp ~/plfa/data/dotagda/* ~/.agda
 
-# agda-mode setup
-# agda-mode compile
+agda-mode setup
+agda-mode compile
+
+cat ~/plfa/.devcontainer/.emacs >> ~/.emacs
